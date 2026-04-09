@@ -1,0 +1,5 @@
+mkdir -p .claude
+# create the files above, then:
+git add CLAUDE.md .claude/settings.json
+git commit -m "Add Claude Code setup files"
+git push origin master
