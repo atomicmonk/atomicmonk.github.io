@@ -4,35 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Atomicmonk</title>
+  <meta name="description" content="Brian's playground — design, code, and the questions that won't let go.">
   <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
     body {
       margin: 0;
       min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #0a0a0a;
+      background: #0d0b0a;
       color: #e0e0e0;
       font-family: Georgia, serif;
     }
     .container {
-      max-width: 600px;
+      max-width: 560px;
       padding: 2rem;
       text-align: center;
+      animation: fadeIn 0.9s ease both;
     }
     h1 {
       font-size: 2.5rem;
       letter-spacing: 0.2em;
       text-transform: lowercase;
       color: #fff;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.4rem;
     }
     .tagline {
       font-size: 1rem;
-      line-height: 1.8;
-      color: #888;
+      line-height: 1.9;
+      color: #aaa;
       font-style: italic;
+      margin-bottom: 2rem;
     }
+    .links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    .links a {
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #555;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .links a:hover { color: #ccc; }
   </style>
 </head>
 <body>
@@ -43,6 +64,11 @@
       It's not so much that I'm driven by finding the answers per se, I merely love dwelling in
       that eternal void of potentialities—where creatures come into being.
     </p>
+    <nav class="links">
+      <a href="#">work</a>
+      <a href="https://github.com/atomicmonk">github</a>
+      <a href="#">find me</a>
+    </nav>
   </div>
 </body>
 </html>
